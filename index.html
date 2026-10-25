@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#21122e">
+<title>Hello Noobri 😹</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:22px;color:#fff8ff;font-family:system-ui,sans-serif;background:radial-gradient(circle at 12% 12%,#703d78,transparent 34%),radial-gradient(circle at 90% 85%,#45408a,transparent 36%),linear-gradient(145deg,#1b1029,#25133b 55%,#17132f)}.card{width:min(610px,100%);text-align:center;padding:clamp(25px,7vw,48px);border:1px solid #ffffff2b;border-radius:30px;background:linear-gradient(145deg,#ffffff17,#ffffff08);box-shadow:0 25px 90px #0005;animation:in .7s ease both}@keyframes in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}.emoji{font-size:clamp(3.3rem,14vw,5rem)}.tag{display:inline-block;margin-top:15px;padding:7px 12px;border-radius:999px;border:1px solid #ffffff30;color:#ffd5b8;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}h1{font-size:clamp(2.7rem,10vw,4.7rem);line-height:1;letter-spacing:-.06em;margin:20px 0}h1 span{color:#ff9bd2}.message{font-size:clamp(1.02rem,3.5vw,1.2rem);line-height:1.9;color:#eadcf0;margin:0 auto;max-width:490px}.message strong{color:#fff}.note{color:#d6c2e7;font-size:.9rem;margin-top:17px}button{margin-top:26px;border:0;border-radius:15px;padding:15px 22px;background:linear-gradient(100deg,#ff9bd2,#ffd5b8);color:#32152f;font-size:1rem;font-weight:900;cursor:pointer;box-shadow:0 9px 28px #ff9bd22b}button:hover{filter:brightness(1.06)}.button-area{position:relative;min-height:90px;display:flex;align-items:center;justify-content:center;margin-top:14px}.gift-btn{margin:0;position:relative;z-index:2;touch-action:manipulation;transition:left .12s ease,top .12s ease,transform .12s ease}#hint{display:none;margin-top:20px;padding:15px;border:1px dashed #ffb9df77;border-radius:15px;background:#ff9bd20d;line-height:1.6}footer{margin-top:25px;color:#bba8ca;font-size:.78rem}.float{position:fixed;opacity:.65;animation:drift 5s ease-in-out infinite;pointer-events:none}.f1{left:8%;top:15%;font-size:1.5rem}.f2{right:8%;top:23%;font-size:1.8rem;animation-delay:-2s}.f3{right:12%;bottom:13%;font-size:1.5rem}@keyframes drift{50%{transform:translateY(-12px) rotate(8deg)}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* Multi-page birthday flow */
+.screen{display:none;min-height:100vh;width:100%;max-width:720px;margin:0 auto;align-items:center;justify-content:center;padding:26px 0}
+.screen.active{display:flex;animation:screenIn .35s ease both}
+@keyframes screenIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.screen .card{width:100%;max-width:610px}
+.choice-list{display:flex;flex-direction:column;gap:12px;max-width:390px;margin:25px auto 0}
+.choice-btn{margin:0;width:100%;background:linear-gradient(100deg,#b96aff,#ff91d2);color:#21122e}
+.bot-btn{background:linear-gradient(100deg,#49caff,#8a8cff)}
+.pro-wrap{position:relative;min-height:100px;max-width:400px;margin:18px auto 0}
+#proBtn{position:absolute;left:50%;top:10px;transform:translateX(-50%);white-space:nowrap;background:linear-gradient(100deg,#39ef9a,#a7ffca);color:#123322;margin:0}
+.birthday-art{font-size:clamp(5rem,20vw,8rem);margin:10px 0;filter:drop-shadow(0 8px 25px #ff8bd855)}
+.photo-placeholder{width:min(270px,80%);aspect-ratio:4/5;border:2px solid #ff9bd2;border-radius:24px;margin:22px auto;background:linear-gradient(145deg,#462c62,#17132f);display:grid;place-items:center;font-size:6rem;box-shadow:0 0 35px #ff9bd222}
+.page-count{font-size:.78rem;color:#d6c2e7;letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}
+.nav-home{background:transparent;color:#e9d6ff;border:1px solid #ffffff30;box-shadow:none;margin-left:8px}
+@media(max-width:500px){.screen{padding:12px 0}.screen .card{padding:25px 20px}.pro-wrap{min-height:110px}}
+
+</style>
+</head>
+<body>
+<div class="float f1">✨</div><div class="float f2">🎮</div><div class="float f3">💗</div>
+<main id="app">
+<section class="screen active" id="page1">
+  <div class="card">
+    <div class="emoji">😹🎂</div><div class="tag">A very important message</div>
+    <h1>Hello <span>Noobri!</span> 😹</h1>
+    <p class="message"><strong>Noobri hate you hate you hate you 😹</strong><br><br>Mujhe yaad tha, aaj AWP ki qasam! 😂<br>Ohoo sorry, idher udher nikal gaya 😭<br>Mujhe pata tha aaj aapki birthday hai, bas main thora late ho gaya. Kal raat se thora sa bimaar hoon 😭<br><br><strong>Btw… here is your gift 🎁</strong></p>
+    <p class="note">Noobri Bot Player has received a birthday message. Please proceed carefully. 🤖</p>
+    <div class="button-area" id="buttonArea"><button type="button" class="gift-btn" id="giftBtn">See gift 🎁</button></div>
+    <footer>Made especially for Kiran • Birthday mission started 🎮</footer>
+  </div>
+</section>
+
+<section class="screen" id="page2">
+  <div class="card">
+    <div class="page-count">Birthday mission • 2 / 5</div><div class="emoji">🐱🎁</div>
+    <h1>Pka gift dekhna <span>chahti ho na?</span> 😭</h1>
+    <p class="message">Mujhe pata hai tum zaroor dekhna chahti ho! 😹<br>Chalo phir, ek chhota sa question to banta hai…</p>
+    <button class="choice-btn" onclick="goTo('page3')">YES 😁</button>
+  </div>
+</section>
+
+<section class="screen" id="page3">
+  <div class="card">
+    <div class="page-count">Player verification • 3 / 5</div><div class="emoji">🎮👑</div>
+    <h1>Are you…</h1>
+    <p class="message">Sach sach batana, Kiran Noobri. 😂</p>
+    <div class="choice-list" id="roleChoices">
+      <button class="choice-btn" onclick="chooseRole('Noob')">😹 Noob?</button>
+      <button class="choice-btn bot-btn" onclick="chooseRole('Bot')">🤖 Bot?</button>
+      <button class="choice-btn" id="proBtn" onclick="proDodge()">👑 No, I am Pro!</button>
+    </div>
+    <p class="note" id="proNote">Choose wisely… 👀</p>
+  </div>
+</section>
+
+<section class="screen" id="page4">
+  <div class="card">
+    <div class="page-count">Birthday wishes • 4 / 6</div>
+    <div class="photo-placeholder" aria-label="Cute birthday illustration">🎀🎂</div>
+    <h1><span>Kiran Noobri</span> 💗</h1>
+    <p class="message" id="roleWish">Gaming Queen, Noob Player, but still special! 😹</p>
+    <p class="note">Pick the other personality too — both wishes are unlocked! 🎮</p>
+    <div class="choice-list">
+      <button class="choice-btn" onclick="showRoleWish('Noob')">😹 See Noob wish</button>
+      <button class="choice-btn bot-btn" onclick="showRoleWish('Bot')">🤖 See Bot wish</button>
+    </div>
+    <button class="choice-btn" onclick="goTo('page5')">Continue to birthday wish 🎂</button>
+  </div>
+</section>
+
+<section class="screen" id="page5">
+  <div class="card">
+    <div class="page-count">A little birthday wish • 5 / 6</div>
+    <div class="emoji">🎂💗✨</div>
+    <div class="tag">For the birthday girl</div>
+    <h1>Happy Birthday, <span>Kiran!</span> 🥳</h1>
+    <p class="message">Allah kare tumhari zindagi khushiyon, kamyabi aur pyaari memories se bhari rahe. Hamesha muskurati raho, tumhare saare ache dreams poore hon, aur har new level life mein pehle se behtar ho. Have the happiest birthday, Noobri! 😹💖</p>
+    <button class="choice-btn" onclick="goTo('page6')">Okay, where's my gift? 🎁</button>
+  </div>
+</section>
+
+<section class="screen" id="page6">
+  <div class="card">
+    <div class="page-count">Mission complete • 6 / 6</div><div class="emoji">🎁✨🎂</div>
+    <div class="tag">Secret gift unlocked</div>
+    <h1>Happy Birthday <span>Kiran Noobri!</span> 💖</h1>
+    <p class="message">Tum na sirf noob ho, tum meri favourite noob ho! 😂<br><br>Gaming ho ya life, hamesha smile karti rehna, kyunki tumhari smile bohat special hai. 🫶<br><br><strong>Keep being you, Kiran!</strong> 💗</p>
+    <div class="roast" style="margin-top:20px;line-height:1.9">Janta hoon mere baghair akele akele game khel rahi ho 😹<br>Lekin yeh azaadi zyada der nahi milegi — main wapas aa raha hoon thore dino tak! 🎮😂<br><br>Btw, wish kaisa laga? Zaroor batana, Noobri! 😹💗</div>
+    <p class="note">More games • More smiles • More wins • Always GG 🎮</p>
+    <button class="choice-btn" onclick="confetti(55)">Celebrate again 🎉</button>
+    <button class="nav-home" onclick="goTo('page1')">↺ Start again</button>
+  </div>
+</section>
+</main>
+<script>
+function goTo(id){
+ document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+ document.getElementById(id).classList.add('active');
+ window.scrollTo({top:0,behavior:'smooth'});
+}
+const giftBtn=document.getElementById('giftBtn');
+const buttonArea=document.getElementById('buttonArea');
+const teaseLines=['Okay fine, see now 😹','Okay okay, one last try 😂','Ab pakka qasam se 😭','Achha baba, ab pakro mujhe 🤣'];
+let attempts=0;
+function dodgeGift(){
+ if(attempts<teaseLines.length){
+   giftBtn.textContent=teaseLines[attempts++];
+   const maxX=Math.max(0,Math.min(95,(buttonArea.clientWidth-giftBtn.offsetWidth)/2));
+   giftBtn.style.left=((Math.random()*2-1)*maxX)+'px';
+   giftBtn.style.top=((Math.random()*2-1)*15)+'px';
+ }else{
+   giftBtn.textContent='Achha baba, tap karo 😂';
+   giftBtn.style.left='0';giftBtn.style.top='0';
+   giftBtn.onclick=()=>goTo('page2');
+ }
+}
+giftBtn.addEventListener('click',dodgeGift);
+let proTries=0;
+const proLines=['Wait… wait… 😭','I am Pro? Nice joke 😂','Ab pakka qasam se, I am pro! 😹'];
+function proDodge(){
+ const b=document.getElementById('proBtn');
+ proTries++;
+ if(proTries<=3){
+   document.getElementById('proNote').textContent=proLines[proTries-1];
+ }
+ if(proTries>=3){
+   b.style.display='none';
+   document.getElementById('proNote').textContent='Pro button rage-quit 😂 Ab Noob ya Bot choose karo!';
+   return;
+ }
+ const list=document.getElementById('roleChoices');
+ const maxX=Math.max(0,Math.min(65,(list.clientWidth-b.offsetWidth)/2));
+ b.style.transform=`translateX(${(Math.random()*2-1)*maxX}px)`;
+}
+function chooseRole(role){
+ showRoleWish(role);
+ goTo('page4');
+}
+function showRoleWish(role){
+ const p=document.getElementById('roleWish');
+ if(role==='Noob'){
+   p.innerHTML='Happy Birthday, meri certified Noobri! 😹💗<br><br>Aim kabhi kabhi vacation pe hota hai, lekin tumhari funny energy hamesha top tier hai. Allah tumhari life ko khushiyon, wins aur cute memories se bhar de. Keep being our adorable Noob! 🎂';
+ }else{
+   p.innerHTML='Happy Birthday, Bot Queen! 🤖🎮💖<br><br>May your life run smoothly with zero bugs, unlimited happiness, and legendary wins. Agar kabhi life lag kare, remember you deserve all the good things. Stay awesome, Kiran Noobri! 🎂';
+ }
+}
+function confetti(count){
+ const chars=['🎉','✨','💖','🎂','⭐','🎮'];
+ for(let i=0;i<count;i++){
+  const s=document.createElement('span');s.className='float';s.textContent=chars[Math.floor(Math.random()*chars.length)];
+  s.style.left=Math.random()*100+'vw';s.style.top='-25px';s.style.animationDuration=(2+Math.random()*3)+'s';s.style.fontSize=(16+Math.random()*20)+'px';
+  document.body.appendChild(s);setTimeout(()=>s.remove(),5200);
+ }
+}
+</script>
+</body>
+</html>
